@@ -945,7 +945,6 @@
                         <table id="example1" class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>SL</th>
                                     <th>product Name</th>
                                     <th>quantity</th>
                                     <th>supplier</th>
