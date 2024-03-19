@@ -955,7 +955,7 @@
                                 @forelse ($products as $product)
                                 <tr>
                                     <td>{{ $product->product_name ?? 'N/A' }}</td>
-                                    <td>{{ $product->quantity }}</td>
+                                    <td>{{ $product->quantity ?? 'N/A' }}</td>
                                     <td>{{ $product->supplier->supplier_name ?? 'N/A' }}</td>
                                 </tr>
                                 @empty

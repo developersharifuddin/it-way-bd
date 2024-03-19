@@ -71,7 +71,7 @@ class ProductsController extends Controller
 
             DB::commit();
 
-            return view('welcome', compact('products'));
+            return redirect()->route('products.index');
         } catch (\Exception $e) {
             // Handle exceptions, rollback the transaction, and return an error response
             DB::rollBack();
