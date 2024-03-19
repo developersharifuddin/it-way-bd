@@ -22,7 +22,8 @@ class StoreProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'supplier_id' => 'required|exists:supplier_details, id',
+            // 'supplier_id' => 'required|exists:supplier_details, id',
+            'supplier_id' => 'required|integer',
             'product_name' => 'required|string',
             'quantity' => 'required|integer',
         ];

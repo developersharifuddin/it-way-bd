@@ -952,9 +952,8 @@
                                 </tr>
                             </thead>
                             <tbody id="datatable">
-                                @forelse ($products as $key => $product)
+                                @forelse ($products as $product)
                                 <tr>
-                                    <td>{{ $key + 1 }}</td>
                                     <td>{{ $product->product_name ?? 'N/A' }}</td>
                                     <td>{{ $product->quantity }}</td>
                                     <td>{{ $product->supplier_id }}</td>
