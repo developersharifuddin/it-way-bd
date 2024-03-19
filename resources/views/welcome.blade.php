@@ -934,7 +934,7 @@
                                 <div class="input-group py-0 my-0">
                                     <input type="text" name="product_name" class="form-control" id="product_name" placeholder="product_name">
                                     <input type="number" name="quantity" class="form-control" id="quantity" placeholder="quantity">
-                                    <input type="number" name="supplier_id" class="form-control" id="supplier_id" placeholder="supplier_id">
+                                    <input type="number" name="supplier_id" class="form-control" id="supplier_id" placeholder="supplier_id" value="1">
                                     <button type="submit" class="btn btn-success input-group-text" for="inputGroupFile02"> Create</button>
                                 </div>
                             </form>
