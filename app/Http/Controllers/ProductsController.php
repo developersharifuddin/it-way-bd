@@ -27,7 +27,8 @@ class ProductsController extends Controller
                 'quantity',
             ];
 
-            $query = Product::with('suppliers')->select($fields)->latest('id');
+            $query = Product::with('supplier')->select($fields)->latest('id');
+
 
             $products = $query->paginate($perPage);
 
@@ -38,6 +39,7 @@ class ProductsController extends Controller
             //     'products' =>  $products,
             // ], 200);
 
+            // dd($products);
             return view('welcome', compact('products'));
         } catch (\Exception $error) {
             return response()->json([

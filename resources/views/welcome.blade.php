@@ -956,7 +956,7 @@
                                 <tr>
                                     <td>{{ $product->product_name ?? 'N/A' }}</td>
                                     <td>{{ $product->quantity }}</td>
-                                    <td>{{ $product->supplier_id }}</td>
+                                    <td>{{ $product->supplier->supplier_name ?? 'N/A' }}</td>
                                 </tr>
                                 @empty
                                 <tr class="h-50">
